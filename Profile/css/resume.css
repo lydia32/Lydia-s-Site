@@ -1,4 +1,8 @@
 body{
+	background-image: url("../img/resumebg.jpg");
+	background-repeat: no-repeat;
+	background-atachment:fixed;
+	background-position:center;
 	font-family: cursive;
 	color:#434343;
 	padding-top:5%;
