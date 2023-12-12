@@ -1,5 +1,5 @@
 body{
-	font-family: cursive;
+	font-family: cursive, serif;
 }
 .parent{
 	display:flex;
@@ -40,3 +40,9 @@ a:hover{
 	color:#666666;
 	background-color:#fcfcfc;
 }
+/*@media screen and (max-width: 500px){
+	.child{
+		display:block;
+		width:50%;
+	}
+}*/

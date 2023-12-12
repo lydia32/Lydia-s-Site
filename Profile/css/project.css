@@ -1,5 +1,5 @@
 body{
-	font-family:cursive;
+	font-family: cursive, serif;
 	color:#434343;
 }
 h1{
@@ -17,9 +17,11 @@ section{
 }
 img{
 	width:50%;
+	transition:.8s;
 }
 img:hover{
 	opacity:60%;
+	transition:.8s;
 }
 #disPlay{
     line-height:300px;
