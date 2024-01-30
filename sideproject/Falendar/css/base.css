@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	color: #333;
+	font-family: 'Playpen Sans', cursive;
+
+}
+body {
+	background-image: url("../img/bg.jpg");
+	color: #444;
+}
+a {
+	cursor:crosshair;
+}

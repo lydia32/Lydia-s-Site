@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Falendar</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/module.css">
+		<link rel="stylesheet" href="css/state.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/c628446591.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav>
+			<img class="logo" src="img/logo.png" alt="logo">
+			<a href="home.html" class="current"><i class="fa fa-calendar-o" aria-hidden="true"></i>Home</a>
+			<a href="list.html"><i class="fa fa-list-ul" aria-hidden="true"></i>To Do List</a>
+			<a href="family.html"><i class="fa fa-user" aria-hidden="true"></i>Family</a>
+			<a href="community.html"><i class="fa fa-users" aria-hidden="true"></i>Commmunity</a>
+			<a href="setting.html"><i class="fa fa-cog" aria-hidden="true"></i>Setting</a>
+		</nav>
+		<div class="wrap">
+			<div class="container container-hm">
+				<form class="searchbar">
+					<input type="text" placeholder="search for event...">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+				</form>
+				<div id="calenbox">
+					<div id="calendar">
+						<input type="month">
+						<table>
+							<thead>
+								<td>M</td>
+								<td>T</td>
+								<td>W</td>
+								<td>T</td>
+								<td>F</td>
+								<td>S</td>
+								<td>S</td>
+							</thead>
+							<tbody>
+								<tr>
+									<td><button>1</button></td>
+									<td><button>2</button></td>
+									<td class="today"><button>3</button></td>
+									<td><button>4</button></td>
+									<td><button>5</button></td>
+									<td><button>6</button></td>
+									<td><button>7</button></td>
+								</tr>
+								<tr>
+									<td><button>8</button></td>
+									<td><button>9</button></td>
+									<td><button>10</button></td>
+									<td><button>11</button></td>
+									<td><button>12</button></td>
+									<td><button>13</button></td>
+									<td><button>14</button></td>
+								</tr>
+								<tr>
+									<td><button>15</button></td>
+									<td><button>16</button></td>
+									<td><button>17</button></td>
+									<td><button>18</button></td>
+									<td><button>19</button></td>
+									<td><button>20</button></td>
+									<td><button>21</button></td>
+								</tr>
+								<tr>
+									<td><button>22</button></td>
+									<td><button>23</button></td>
+									<td><button>24</button></td>
+									<td><button>25</button></td>
+									<td><button>26</button></td>
+									<td><button>27</button></td>
+									<td><button>28</button></td>
+								</tr>
+								<tr>
+									<td><button>29</button></td>
+									<td><button>30</button></td>
+									<td><button>31</button></td>
+									<td class="faded"><button>1</button></td>
+									<td class="faded"><button>2</button></td>
+									<td class="faded"><button>3</button></td>
+									<td class="faded"><button>4</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="info">
+						<div class="date">
+							<h4>3 Jan</h4>
+							<h6>Wednesday</h6>
+						</div>
+						<div class="event">
+							<div class="item">14:00 dentist<button><i class="fa fa-minus" aria-hidden="true"></i></button></div>
+							<div class="item">18:30 dinner with Eva<button><i class="fa fa-minus" aria-hidden="true"></i></div>
+							<div class="item">21:00 English class<button><i class="fa fa-minus" aria-hidden="true"></i></div>
+						</div>
+						<div class="btn">
+							<button><i class="fa fa-plus" aria-hidden="true"></i>Add Event</button>
+						</div>
+					</div>
+				</div>
+				<div id="taskbox">
+					<button><i class="fa fa-envelope" aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
