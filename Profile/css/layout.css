@@ -1,0 +1,375 @@
+
+.mypic {
+	margin: 5%;
+	width: 50%;
+	height: auto;
+}
+.mypic img {
+	width: 100%;
+	height: 100%;
+}
+.txt {
+	margin: 5%;
+}
+.txt h1 {
+	margin-bottom: 8%;
+}
+.txt p {
+	margin: 2% 0;
+}
+.txt a {
+	display: inline-block;
+	margin-top: 8%;
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 2% 5%;
+	border: 1px solid #464445;
+	color: #fafafa;
+	background-color: #464445;
+	transition: .5s ease-in-out;
+}
+.txt a:last-child {
+	margin: 0 5%;
+}
+.txt a:hover {
+	background-color: #fafafa;
+	color: #464445;
+}
+
+#resume {
+	background-color: #EFD1D5;
+	position: relative;
+}
+#resume .container {
+/*	padding: 1%;
+	gap: 1.5%;*/
+	box-sizing: border-box;
+	box-shadow: 30px 50px 20px #755E6380;
+	position: relative;
+}
+#resume::before {
+	content: 'Resume，';
+	position: absolute;
+	font-size: 40px;
+	top: 13%;
+	left: 25%;
+	background-color: #fafafa50;
+	backdrop-filter: blur(5px);
+	padding: .5% 2%;
+	z-index: 3;
+}
+.part1,
+.part2,
+.part3 {
+	width: 0;
+	height: 100%;
+}
+.part1 {
+	flex-grow: 2;
+	background-color: #8B8A92;
+	position: relative;
+	z-index: 1;
+}
+.part1 img {
+	width: 140%;
+	transform: translate(40px, 50px);
+}
+.part1 .ename {
+	font-size: 50px;
+	color: #fefefe;
+	opacity: .8;
+	position: absolute;
+	transform: rotate(-90deg);
+	right: -70px;
+	bottom: 80px;
+}
+.part1 .cname {
+	font-size: 40px;
+	margin-left: 40px;
+	margin-top: 60px;
+}
+.part2 {
+	flex-grow: 3;
+	background-color: #B5ABAE;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	padding-bottom: 5%;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 0;
+}
+.part2 p {
+	margin: 1% 7%;
+}
+.part2 i {
+	padding-right: 10px;
+}
+.part2::after {
+	content: '/.';
+	position: absolute;
+	width: 50px;
+	height: 200px;
+	background-color: #8B8A92;
+	right: -30px;
+	top: 80px;
+	text-align: center;
+	line-height: 200px;
+	font-size: 40px;
+	font-weight: 300;
+	font-style: italic;
+	color: #333;
+	opacity: .8;
+}
+.part3 {
+	flex-grow: 6;
+/*	background-color: #E8E8E8;*/
+	background-color: transparent;
+	padding: 3% 5%;
+	box-sizing: border-box;
+	position: relative;
+}
+/*.part3::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #777;
+	content: '\f245';
+	position: absolute;
+	right: 200px;
+	bottom: -5%;
+}
+.part3::after {
+	content: 'try hovering over this section';
+	color: #777;
+	position: absolute;
+	right: 5px;
+	bottom: -5%;
+}*/
+.part3 h4 {
+	font-size: 24px;
+	color: #666;
+	border-bottom: 1px solid #333;
+	display: inline-block;
+}
+.part3 a>h6 {
+	color: #888;
+	text-align: center;
+	margin-top: 3%;
+	font-size: 16px;
+	display: inline-block;
+	margin-left: 10%;
+	float: right;
+	position: relative;
+	opacity: 1;
+}
+.part3 a>h6::after {
+	content: "What I'm Doing Now";
+	position: absolute;
+	top: -30%;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	line-height: 1;
+	opacity: 0;
+	color: #000;
+}
+.part3 a>h6:hover {
+	opacity: .4;
+	transition: .5s ease-in-out;
+}
+.part3 a>h6:hover::after {
+	opacity: 1;
+	transition: .5s ease-in-out;
+}
+
+.part3 .expitem {
+	margin: 3% 0;
+	width: 80%;
+	padding: 2px 2px 2px 100px;
+	box-sizing: border-box;
+	border-bottom: .5px solid #fff;
+	transition: 1s;
+}
+.part3 .expitem:hover {
+	border-bottom: .5px solid #666;
+	background-color: whitesmoke;
+	transition: 1s;
+}
+.part3 .expitem:hover>h6,
+.part3 .expitem:hover>p {
+	transform: translateX(-50px);
+	transition: 1s ease-in-out;
+}
+
+/*.part3 .expitem::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: .5px;
+	background-color: #666;
+	left: 0;
+	bottom: -2px;
+	transition: width .5s;
+}
+.part3 .expitem:hover::before {
+	width: 45%;
+}*/
+.part3 .expitem .content {
+	position: absolute;
+	width: 100%;
+	right: -60%;
+	background-color: #B5ABAE99;
+	font-size: 14px;
+	backdrop-filter: blur(10px);
+/*	border-right: .5px solid #666;
+	border-bottom: .5px solid #666;*/
+	top: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.7;
+	padding: 10%;
+	box-sizing: border-box;
+	opacity: 0;
+}
+.part3 .expitem:hover .content {
+	opacity: 1;
+	transition: 1s;
+}
+/*.part3 .expitem .content ul {
+
+}
+.part3 .expitem .content li {
+	list-style: disc inside;
+}*/
+.part3 .expitem .title {
+	font-size: 18px;
+}
+.part3 .expitem .period {
+
+}
+.part3 .expitem .company {
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+#project {
+	position: relative;
+}
+#project::before {
+	content: 'Project。';
+	position: absolute;
+	font-size: 40px;
+	top: -25px;
+	left: 12%;
+	background-color: #DAC0C350;
+	backdrop-filter: blur(5px);
+	padding: .5% 2%;
+	z-index: 3;
+}
+#project .container {
+	width: 80%;
+	display: flex;
+	box-shadow: 0 0 0 #fff;
+}
+#project .container:hover .item {
+	opacity: .5;
+}
+#project .container .item {
+	width: 500px;
+	height: auto;
+/*	margin: 0 30px;*/
+	position: relative;
+	transform-origin:center;
+	transform: perspective(800px) rotateY(25deg);
+	transition:0.5s;
+	border: .5px solid #ccc;
+}
+#project .container .item:hover {
+	transform: perspective(800px) rotateY(0deg);
+	opacity: 1;
+}
+.item h3 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-100%);
+	font-size: 16px;
+	font-variant: small-caps;
+	color: #666;
+}
+.item img {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	object-fit: cover;
+
+}
+.item .txtbox {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+}
+#project .container .item:hover img {
+	opacity: .5;
+}
+#project .container .item:hover .txtbox {
+	opacity: 1;
+}
+#project .container .item:hover h6 {
+	transform: translateY(-450%);
+	transition: .5s;
+}
+.item .txtbox h6 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.item .txtbox .btn {
+	margin: 10px;
+	padding: 5px 10px;
+	background-color: white;
+	border: 1px solid white;
+	box-shadow: 5px 5px 10px #aaa;
+	border-radius: 50px;
+}
+.item .txtbox a {
+	text-decoration: none;
+	color: #464445;
+}
+.item .txtbox .btn:hover {
+	background-color: transparent;
+	border: 1px solid white;
+	transition: .5;
+	text-decoration: none;
+	color: #464445;
+	transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

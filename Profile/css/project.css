@@ -1,0 +1,56 @@
+body{
+	font-family: cursive, serif;
+	color:#434343;
+}
+h1{
+	margin-left:25%;
+}
+.parent{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+section{
+	padding-top:3%;
+	text-align:center;
+	width:20%;
+}
+img{
+	width:50%;
+	transition:.8s;
+}
+img:hover{
+	opacity:60%;
+	transition:.8s;
+}
+#disPlay{
+    line-height:300px;
+	width: 484px;
+	border:.8px solid #434343;
+	margin:0 auto;
+	margin-top:3%;
+    background-color: #f1f2f4;
+    background-image: url("../img/noisebg.png");
+    background-repeat: no-repeat;
+    color:#434343;
+    font-weight:lighter;
+    text-align: center;
+    margin-bottom:25px;
+    font-size: 100%;
+}
+a{
+	display:block;
+	width:60px;
+	text-align:center;
+	color:#f1f2f4;
+	background-color:#434343;
+	text-decoration:none;
+	padding:5px 10px 5px 10px;
+	margin:1% 25%;
+	border: 0.2px solid #434343;
+	border-radius: 20px;
+}
+a:hover{
+	color:#666666;
+	background-color:#fcfcfc;
+}
